@@ -212,6 +212,9 @@ then
   ubuntu_animal=`wget --quiet -O - http://changelogs.ubuntu.com/meta-release-development | grep "^Dist: " | tail -1 | sed -r 's/^Dist: (.*)$/\1/'`
   tar_file="http://cdimage.ubuntu.com/ubuntu-core/daily/current/$ubuntu_animal-core-$ubuntu_arch.tar.gz"
 fi
+
+tar_file = "http://cdimage.ubuntu.com/ubuntu-core/xenial/daily-preinstalled/current/xenial-preinstalled-core-armhf.tar.gz"
+
 wget -O - $tar_file | tar xzvvp -C /tmp/urfs/
 
 mount -o bind /proc /tmp/urfs/proc
