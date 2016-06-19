@@ -213,7 +213,7 @@ then
   tar_file="http://cdimage.ubuntu.com/ubuntu-core/daily/current/$ubuntu_animal-core-$ubuntu_arch.tar.gz"
 fi
 
-tar_file = "http://cdimage.ubuntu.com/ubuntu-core/xenial/daily-preinstalled/current/xenial-preinstalled-core-armhf.tar.gz"
+tar_file="http://cdimage.ubuntu.com/ubuntu-core/xenial/daily-preinstalled/current/xenial-preinstalled-core-armhf.tar.gz"
 
 wget -O - $tar_file | tar xzvvp -C /tmp/urfs/
 
